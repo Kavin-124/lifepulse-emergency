@@ -369,16 +369,9 @@ function calculateDistanceKm(lat1, lon1, lat2, lon2) {
   return R * c;
 }
 
-// Serve APK download directly with correct attachment header
+// Serve APK download via GitHub high-speed CDN redirect
 app.get('/lifepulse-mobile.apk', (req, res) => {
-  const apkPath = path.join(__dirname, 'public', 'lifepulse-mobile.apk');
-  if (fs.existsSync(apkPath)) {
-    res.setHeader('Content-Type', 'application/vnd.android.package-archive');
-    res.setHeader('Content-Disposition', 'attachment; filename="lifepulse-mobile.apk"');
-    res.sendFile(apkPath);
-  } else {
-    res.status(404).send('APK file not found on server.');
-  }
+  res.redirect('https://github.com/Kavin-124/lifepulse-emergency/raw/main/Life-pluse/public/lifepulse-mobile.apk');
 });
 
 // Fallback to SPA index.html
