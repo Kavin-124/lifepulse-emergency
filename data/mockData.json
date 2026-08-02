@@ -1,0 +1,184 @@
+{
+  "profiles": [
+    {
+      "id": "LP-889201",
+      "name": "Rahul Sharma",
+      "age": 21,
+      "gender": "Male",
+      "bloodGroup": "O+",
+      "vehicleNumber": "KA01AB1234",
+      "secondaryVehicleNumber": "KA05MH9988",
+      "primaryContactName": "Anita Sharma (Mother)",
+      "primaryContactPhone": "+919876543210",
+      "secondaryContactName": "Vikram Sharma (Brother)",
+      "secondaryContactPhone": "+919876543211",
+      "allergies": "Penicillin, Peanuts",
+      "chronicConditions": "Asthma",
+      "currentMedications": "Inhaler (Salbutamol as needed)",
+      "organDonor": true,
+      "insuranceProvider": "Star Health Care",
+      "insurancePolicyNo": "SH-99201-X",
+      "pin": "1234",
+      "createdAt": "2026-08-01T10:00:00Z"
+    },
+    {
+      "id": "LP-443102",
+      "name": "Priya Patel",
+      "age": 22,
+      "gender": "Female",
+      "bloodGroup": "B-",
+      "vehicleNumber": "MH02CD5678",
+      "primaryContactName": "Rajesh Patel (Father)",
+      "primaryContactPhone": "+919123456789",
+      "secondaryContactName": "Kavita Patel (Sister)",
+      "secondaryContactPhone": "+919123456790",
+      "allergies": "Sulfa drugs, Latex",
+      "chronicConditions": "Type 1 Diabetes",
+      "currentMedications": "Insulin Glargine 18U nightly",
+      "organDonor": true,
+      "insuranceProvider": "HDFC ERGO Health",
+      "insurancePolicyNo": "HE-44810-Z",
+      "pin": "4321",
+      "createdAt": "2026-08-01T11:30:00Z"
+    },
+    {
+      "id": "LP-712653",
+      "name": "Kavin",
+      "age": 20,
+      "gender": "Male",
+      "bloodGroup": "A+",
+      "vehicleNumber": "TN47BB0583",
+      "secondaryVehicleNumber": "",
+      "primaryContactName": "Mother",
+      "primaryContactPhone": "7010502817",
+      "secondaryContactName": "Friend",
+      "secondaryContactPhone": "6374406171",
+      "allergies": "None declared",
+      "chronicConditions": "None declared",
+      "currentMedications": "None declared",
+      "organDonor": false,
+      "insuranceProvider": "",
+      "insurancePolicyNo": "",
+      "pin": "1111",
+      "updatedAt": "2026-08-02T08:14:14.405Z"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "hosp-1",
+      "name": "City General Trauma & Emergency Care",
+      "address": "45 MG Road, Central District",
+      "phone": "+918022223333",
+      "ambulancePhone": "108",
+      "distanceKm": 1.2,
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "traumaCenter": true,
+      "bloodBank": true,
+      "open24x7": true
+    },
+    {
+      "id": "hosp-2",
+      "name": "Apollo Multi-Specialty Hospital",
+      "address": "154 Bannerghatta Road",
+      "phone": "+918046688000",
+      "ambulancePhone": "+91801066",
+      "distanceKm": 3.4,
+      "lat": 12.8986,
+      "lng": 77.5988,
+      "traumaCenter": true,
+      "bloodBank": true,
+      "open24x7": true
+    },
+    {
+      "id": "hosp-3",
+      "name": "Manipal Heart & Emergency Institute",
+      "address": "98 HAL Airport Road",
+      "phone": "+918025024444",
+      "ambulancePhone": "102",
+      "distanceKm": 4.8,
+      "lat": 12.9582,
+      "lng": 77.6493,
+      "traumaCenter": true,
+      "bloodBank": true,
+      "open24x7": true
+    },
+    {
+      "id": "hosp-4",
+      "name": "St. John's Medical College Hospital",
+      "address": "Koramangala 3rd Block",
+      "phone": "+918022065000",
+      "ambulancePhone": "+918022065001",
+      "distanceKm": 2.7,
+      "lat": 12.9344,
+      "lng": 77.6205,
+      "traumaCenter": true,
+      "bloodBank": true,
+      "open24x7": true
+    }
+  ],
+  "firstAidGuides": [
+    {
+      "id": "cpr",
+      "title": "CPR (Cardiopulmonary Resuscitation)",
+      "category": "Critical",
+      "icon": "❤️",
+      "steps": [
+        "Check responsiveness: Tap shoulders and shout 'Are you okay?'.",
+        "Call for help: Dial 112 / 108 immediately and get an AED if available.",
+        "Position hands: Place heel of one hand in center of chest, interlock other hand.",
+        "Compressions: Push hard and fast (100–120 compressions per minute) at 2 inches depth.",
+        "Rescue breaths: Give 2 rescue breaths after every 30 compressions if trained."
+      ]
+    },
+    {
+      "id": "bleeding",
+      "title": "Severe Bleeding Control",
+      "category": "Trauma",
+      "icon": "🩸",
+      "steps": [
+        "Apply direct pressure: Use a clean cloth or gloved hands directly over wound.",
+        "Elevate: Raise the injured limb above heart level if no fracture suspected.",
+        "Secure bandage: Wrap tightly with sterile bandage without stopping circulation.",
+        "Tourniquet (Last resort): Apply 2–3 inches above severe limb wound if pressure fails.",
+        "Keep patient warm and elevate legs to treat for shock."
+      ]
+    },
+    {
+      "id": "choking",
+      "title": "Heimlich Maneuver (Choking)",
+      "category": "Airway",
+      "icon": "🫁",
+      "steps": [
+        "Stand behind victim: Wrap arms around their waist.",
+        "Make a fist: Place thumb side of fist slightly above navel.",
+        "Thrusts: Perform quick, upward abdominal thrusts until object clears.",
+        "For infants: Give 5 back blows followed by 5 chest thrusts."
+      ]
+    },
+    {
+      "id": "burns",
+      "title": "Burn First Aid",
+      "category": "Thermal",
+      "icon": "🔥",
+      "steps": [
+        "Cool immediately: Run cool (not icy) water over burn for at least 10–20 minutes.",
+        "Do NOT apply ice, butter, or toothpaste.",
+        "Cover loosely: Use sterile non-stick bandage or clean wrap.",
+        "Seek medical help if burn is larger than palm or on face/joints."
+      ]
+    },
+    {
+      "id": "seizures",
+      "title": "Seizure Response",
+      "category": "Neurological",
+      "icon": "⚡",
+      "steps": [
+        "Ease to floor: Protect head with cushion or folded jacket.",
+        "Turn on side: Helps keep airway clear.",
+        "Do NOT insert anything into person's mouth or restrain movements.",
+        "Time the seizure: Call emergency if seizure lasts longer than 5 minutes."
+      ]
+    }
+  ]
+}
