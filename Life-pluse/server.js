@@ -369,6 +369,11 @@ function calculateDistanceKm(lat1, lon1, lat2, lon2) {
   return R * c;
 }
 
+// Serve mobile app download page
+app.get('/download', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'download.html'));
+});
+
 // Serve APK download via GitHub high-speed CDN redirect
 app.get('/lifepulse-mobile.apk', (req, res) => {
   res.redirect('https://github.com/Kavin-124/lifepulse-emergency/raw/main/Life-pluse/public/lifepulse-mobile.apk');
