@@ -106,11 +106,10 @@ lifepulse-emergency/
 
 ---
 
-## 🌐 Deployment
+## 🌐 Live Demo & Deployment
 
-The application is pre-configured for instant zero-sleep deployment on **Vercel** (`vercel.json`) or **Render.com**:
-
-* **Live Demo URL**: `https://lifepulse-emergency.vercel.app`
+* **Live Web Application**: **[https://lifepulse-emergency.vercel.app/](https://lifepulse-emergency.vercel.app/)**
+* **GitHub Repository**: **[https://github.com/Kavin-124/lifepulse-emergency](https://github.com/Kavin-124/lifepulse-emergency)**
 
 ---
 
