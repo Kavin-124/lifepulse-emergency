@@ -121,15 +121,27 @@
           <form id="profile-form" onsubmit="profileManager.saveProfile(event)">
             <input type="hidden" id="profile-id">
 
-            <div class="form-group">
-              <label class="form-label">Full Name *</label>
-              <input type="text" id="prof-name" class="form-input" required placeholder="e.g. Rahul Sharma">
+            <div class="form-group" style="text-align: center; margin-bottom: 24px; background: rgba(0,210,211,0.05); padding: 18px; border-radius: var(--radius-md); border: 1px dashed rgba(0,210,211,0.3);">
+              <label class="form-label" style="display: block; margin-bottom: 10px; color: var(--color-accent); font-weight: 700;">📸 OWNER PROFILE PHOTO (FOR FACE IDENTIFICATION)</label>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                <img id="photo-preview" src="https://ui-avatars.com/api/?name=Kavin&background=ff3b5c&color=fff&size=150" 
+                     alt="Profile Photo" 
+                     style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-accent); box-shadow: 0 4px 15px rgba(0,210,211,0.4);" />
+                
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
+                  <label for="prof-photo-file" class="btn btn-accent" style="font-size: 0.85rem; cursor: pointer; padding: 10px 16px;">
+                    📷 Choose Photo / Take Camera Picture
+                  </label>
+                  <input type="file" id="prof-photo-file" accept="image/*" style="display: none;" onchange="profileManager.handlePhotoUpload(event)">
+                </div>
+                <input type="hidden" id="prof-photo" value="">
+                <small style="color: var(--text-muted); font-size: 0.75rem;">Upload your face photo so bystanders & paramedics can identify you in an emergency.</small>
+              </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label">Profile Photo URL (For Bystander Face Identification)</label>
-              <input type="url" id="prof-photo" class="form-input" placeholder="e.g. https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150">
-              <small style="color: var(--text-muted); font-size: 0.75rem;">Optional: Paste an image link so bystanders can visually match your face during an emergency.</small>
+              <label class="form-label">Full Name *</label>
+              <input type="text" id="prof-name" class="form-input" required placeholder="e.g. Kavin">
             </div>
 
             <div class="grid-2">

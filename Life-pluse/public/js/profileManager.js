@@ -61,9 +61,27 @@ const profileManager = {
     }
   },
 
+  handlePhotoUpload(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const dataUrl = e.target.result;
+      const preview = document.getElementById('photo-preview');
+      const hiddenInput = document.getElementById('prof-photo');
+      if (preview) preview.src = dataUrl;
+      if (hiddenInput) hiddenInput.value = dataUrl;
+      app.showToast('Profile photo selected! Tap Save Profile to confirm.', 'success');
+    };
+    reader.readAsDataURL(file);
+  },
+
   populateForm(p) {
     document.getElementById('profile-id').value = p.id || '';
     document.getElementById('prof-name').value = p.name || '';
+    const photoUrl = p.photoUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(p.name || 'User')}&background=ff3b5c&color=fff&size=150`;
+    if (document.getElementById('photo-preview')) document.getElementById('photo-preview').src = photoUrl;
     if (document.getElementById('prof-photo')) document.getElementById('prof-photo').value = p.photoUrl || '';
     document.getElementById('prof-blood').value = p.bloodGroup || '';
     document.getElementById('prof-age').value = p.age || '';
