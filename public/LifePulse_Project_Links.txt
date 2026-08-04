@@ -1,0 +1,43 @@
+================================================================================
+🚨 LIFEPULSE - EMERGENCY MEDICAL & FIRST-RESPONDER NETWORK (PROJECT LINKS)
+================================================================================
+
+1. LIVE PRODUCTION WEB APPLICATION (PWA)
+   URL: https://lifepulse-emergency.vercel.app/
+   Description: Progressive Web App with Zero-Sticker Vehicle Search, 
+                Live OpenStreetMap Trauma Center Locator, SOS Audio Siren, 
+                and Offline Service Worker caching.
+
+2. MOBILE APP DOWNLOAD PORTAL
+   URL: https://lifepulse-emergency.vercel.app/download
+   Description: Official mobile landing page for 1-tap Android APK download 
+                with step-by-step installation instructions.
+
+3. DIRECT ANDROID APP (.APK) DOWNLOAD LINK
+   URL: https://github.com/Kavin-124/lifepulse-emergency/raw/main/Life-pluse/public/lifepulse-mobile.apk
+   Description: Direct high-speed download link for the compiled native 
+                LifePulse Android App (.apk) with Accelerometer Crash Sensors.
+
+4. GITHUB SOURCE CODE REPOSITORY
+   URL: https://github.com/Kavin-124/lifepulse-emergency
+   Description: Full-stack repository containing Node.js Express server, 
+                public PWA frontend, and React Native Expo mobile app.
+
+5. EXPO CLOUD PERMANENT BUILDS DASHBOARD
+   URL: https://expo.dev/accounts/kavin_124/projects/lifepulse-mobile/builds
+   Description: Permanent Expo Cloud dashboard for managing mobile builds, 
+                keystores, and updating new app versions.
+
+6. VERCEL DEPLOYMENT DASHBOARD
+   URL: https://vercel.com/kavin-124s-projects
+   Description: Live cloud hosting dashboard for serverless APIs and web assets.
+
+================================================================================
+PROJECT DEMO DATA FOR TESTING:
+• Demo Profile ID: LP-712653
+• Demo Registered Vehicle Plate: TN47BB0583 (Kavin)
+• Primary ICE Contact: Mother (7010502817)
+• Secondary ICE Contact: Friend (6374406171)
+• Blood Group: A+
+• Security PIN: 1111
+================================================================================

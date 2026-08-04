@@ -48,12 +48,17 @@ const vehicleLookup = {
 
         return `
           <div class="card" style="border: 2px solid var(--color-accent); box-shadow: var(--shadow-glow);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
-              <div>
-                <span style="font-size: 0.75rem; color: var(--color-accent); font-weight: 700; text-transform: uppercase;">MATCHED EMERGENCY RECORD</span>
-                <h2 style="font-size: 1.6rem; font-weight: 800;">${profile.name}</h2>
-                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 2px;">
-                  🚗 Vehicle Plate: <strong style="color: var(--text-primary); text-transform: uppercase;">${profile.vehicleNumber || 'Unregistered'}</strong>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div style="display: flex; gap: 14px; align-items: center;">
+                <img src="${profile.photoUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(profile.name)}&background=ff3b5c&color=fff&size=150`}" 
+                     alt="${profile.name}" 
+                     style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-accent); box-shadow: 0 4px 10px rgba(0,210,211,0.3);" />
+                <div>
+                  <span style="font-size: 0.75rem; color: var(--color-accent); font-weight: 700; text-transform: uppercase;">REGISTERED OWNER / RIDER</span>
+                  <h2 style="font-size: 1.6rem; font-weight: 800; margin: 0;">${profile.name}</h2>
+                  <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 2px;">
+                    🚗 Vehicle Plate: <strong style="color: var(--text-primary); text-transform: uppercase;">${profile.vehicleNumber || 'Unregistered'}</strong>
+                  </div>
                 </div>
               </div>
               <div class="blood-badge">🩸 ${profile.bloodGroup}</div>

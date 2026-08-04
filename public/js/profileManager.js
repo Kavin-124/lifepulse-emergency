@@ -1,7 +1,7 @@
 // Profile Manager Module
 const profileManager = {
   loadSavedLocalProfile() {
-    const localId = localStorage.getItem('lifepulse_user_id');
+    const localId = localStorage.getItem('lifepulse_user_id') || 'LP-712653';
     if (localId) {
       this.fetchAndPopulateProfile(localId);
     }
