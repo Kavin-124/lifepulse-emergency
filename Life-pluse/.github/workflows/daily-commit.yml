@@ -1,0 +1,32 @@
+name: Daily GitHub Profile Green Streak Auto-Update
+
+on:
+  schedule:
+    # Runs automatically every day at 00:00 UTC (5:30 AM IST)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual 1-click trigger from GitHub Actions tab
+
+# Grant write permissions to GITHUB_TOKEN for automated commits
+permissions:
+  contents: write
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Update Daily Activity Log
+        run: |
+          echo "Last automated activity update: $(date -u)" > DAILY_ACTIVITY.md
+
+      - name: Commit and Push Daily Streak
+        run: |
+          git config --global user.name "Kavin-124"
+          git config --global user.email "kavinravi124@gmail.com"
+          git add DAILY_ACTIVITY.md
+          git commit -m "Auto update: Daily project maintenance & health check $(date -u +'%Y-%m-%d')" || exit 0
+          git push origin main
