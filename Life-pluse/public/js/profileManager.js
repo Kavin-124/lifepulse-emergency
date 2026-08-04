@@ -64,6 +64,7 @@ const profileManager = {
   populateForm(p) {
     document.getElementById('profile-id').value = p.id || '';
     document.getElementById('prof-name').value = p.name || '';
+    if (document.getElementById('prof-photo')) document.getElementById('prof-photo').value = p.photoUrl || '';
     document.getElementById('prof-blood').value = p.bloodGroup || '';
     document.getElementById('prof-age').value = p.age || '';
     document.getElementById('prof-gender').value = p.gender || 'Male';
@@ -86,6 +87,7 @@ const profileManager = {
     const payload = {
       id: document.getElementById('profile-id').value || null,
       name: document.getElementById('prof-name').value.trim(),
+      photoUrl: document.getElementById('prof-photo')?.value.trim() || '',
       bloodGroup: document.getElementById('prof-blood').value,
       age: document.getElementById('prof-age').value,
       gender: document.getElementById('prof-gender').value,
